@@ -1,3 +1,5 @@
+import { animateUFO } from './ufo.js';
+
 function generateCalendar() {
     const calendar = document.getElementById('calendar');
     const today = new Date();
@@ -66,6 +68,12 @@ function highlightSelectedDate(dayDiv) {
     const selectedDates = document.querySelectorAll('.selected-date');
     selectedDates.forEach(date => date.classList.remove('selected-date'));
     dayDiv.classList.add('selected-date');
+
+    const selectedDate = parseInt(dayDiv.innerText);
+    const selectedMonth = dayDiv.parentElement.querySelector('h2').innerText.split(' ')[0];
+    if (selectedDate === 24 && selectedMonth === 'December') {
+        animateUFO();
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
