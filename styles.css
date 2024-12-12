@@ -51,7 +51,7 @@ body {
 }
 
 .current-date {
-    background-color: yellow;
+    background-color: red;
 }
 
 .selected-date {

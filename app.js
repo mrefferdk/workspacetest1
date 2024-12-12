@@ -56,6 +56,8 @@ function highlightCurrentDate() {
         const dayDate = new Date(currentYear, currentMonth, parseInt(day.innerText));
         if (dayDate.getDate() === currentDay && dayDate.getMonth() === currentMonth && dayDate.getFullYear() === currentYear) {
             day.classList.add('current-date');
+        } else {
+            day.classList.remove('current-date');
         }
     });
 }
