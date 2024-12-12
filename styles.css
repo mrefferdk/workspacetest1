@@ -57,3 +57,23 @@ body {
 .selected-date {
     background-color: green;
 }
+
+#ufo {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    width: 100px;
+    height: 50px;
+    background: url('ufo.png') no-repeat center center;
+    background-size: contain;
+    animation: ufo-animation 5s forwards;
+}
+
+@keyframes ufo-animation {
+    from {
+        right: -100px;
+    }
+    to {
+        right: 50%;
+    }
+}
