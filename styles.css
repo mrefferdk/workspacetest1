@@ -11,6 +11,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .month {
